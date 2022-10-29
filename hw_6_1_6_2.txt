@@ -1,0 +1,28 @@
+7.1. Найдите кпопку c текстом "Gold". Попробуйте подобрать как минимум 2 разных XPATH и/или CSS-селекторов
+http://suninjuly.github.io/xpath_examples
+
+xpath:
+//button[text()='Gold']
+//button[contains(text(), "Gold")]
+css:
+div+div>button+button+button
+div:nth-child(2) button:nth-child(3)
+
+7.2. Найдите элемент с текстом "Lenin cat". Чем больше разных XPATH и/или CSS-селекторов сможете 
+подобрать, тем лучше
+http://suninjuly.github.io/cats.html
+
+xpath:
+//p[@id='politic']
+//p[@class="card-text lenin-cat"]
+//div/*[@class="card-text lenin-cat"]
+//*[@id="politic"]
+css:
+div:nth-child(3)>div:nth-child(1)>div:nth-child(2)>p
+#politic
+#politic.card-text.lenin-cat
+div.card-body p.card-text.lenin-cat
+div.card-body>p.card-text.lenin-cat
+
+
+
